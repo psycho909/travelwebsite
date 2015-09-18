@@ -49,8 +49,14 @@
 	.about_travel-box{
 		width: 262px;
 	}
+	.navbar-fixed-top.navbar>.container .navbar-brand{
+		margin-top: 0px;
+	}
 }
 @media (min-width:992px){
+	.hidden-mds{
+		opacity: 0;
+	}
 	.about_travel-box{
 		width: 232px;
 	}
@@ -60,6 +66,7 @@
 	}
 }
 @media (min-width: 768px){
+
 	.hidden-mds{
 		opacity: 0;
 	}
@@ -81,6 +88,17 @@
 	}
 	.navbar-fixed-top .navbar-nav>li>a.line:before{
 		background-color: #086D80;
+	}
+	.navbar>.container .navbar-brand{
+		margin-top: 6px;
+	}
+	.navbar-fixed-top.navbar>.container .navbar-brand{
+		margin-top: 0px;
+	}
+}
+@media (max-width: 991px) and (min-width: 768px){
+	.hidden-mds{
+		opacity: 1;
 	}
 }
 </style>
