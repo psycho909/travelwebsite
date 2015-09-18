@@ -441,7 +441,7 @@ body{
 }
 @media (min-width: 992px){
 	#about_local .nav>li>a{
-		width: 380px !important;
+		width: 380px;
 		height: 64px;
 		padding: 0;
 		background-color: #58476e;

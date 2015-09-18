@@ -22,11 +22,11 @@ $(function(){
 	    var attrHref = $(this);
 	    if($('#nav').hasClass('navbar-fixed-top')){
 	    	$('html, body').stop().animate({
-		        scrollTop: ($(attrHref.attr('href')).offset().top - 66)
+		        scrollTop: ($(attrHref.attr('href')).offset().top - 51)
 		    }, 1250);
 	    }else{
 	    	$('html, body').stop().animate({
-		        scrollTop: ($(attrHref.attr('href')).offset().top - 130)
+		        scrollTop: ($(attrHref.attr('href')).offset().top - 117)
 		    }, 1250);
 	    }
 	    console.log($('#nav').hasClass('navbar-fixed-top'));
@@ -36,7 +36,7 @@ $(function(){
     console.log(nH);
 	$('body').scrollspy({
 		target: '.navbar',
-		offset:66
+		offset:51
 	})
 	$('.about-video-btn').on('click',function(){
 		$('.gray').fadeIn();
