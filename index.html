@@ -13,94 +13,6 @@
 <link rel="stylesheet" href="./css/mycss.css">
 <script src="./js/myjs.js"></script>
 <style>
-.about_local-content-box .thumbnail{
-	max-width:285px;
-	height: 275px;
-	padding:0;
-	border:none;
-	margin: 0 auto;
-	margin-bottom:30px;
-	overflow: hidden;
-	position: relative;
-	border-radius: 0 0 10px 10px;
-}
-.about_local-content-box .thumbnail img{
-	width: 285px;
-	height: 157px;
-}
-.about_local-content-box .thumbnail .caption{
-	height: 100%;
-	padding: 10px;
-	font-size: 14px;
-	background-color: #E0EBEB;
-	font-weight: 900;
-}
-@media (min-width:1200px){
-	.hidden-lgs{
-		opacity: 0;
-	}
-	.navbar-fixed-top .hidden-lgs{
-		opacity: 1;
-		transition:all 1s;
-	}
-	#about_local .nav>li>a{
-		width: 430px;
-	}
-	.about_travel-box{
-		width: 262px;
-	}
-	.navbar-fixed-top.navbar>.container .navbar-brand{
-		margin-top: 0px;
-	}
-}
-@media (min-width:992px){
-	.hidden-mds{
-		opacity: 0;
-	}
-	.about_travel-box{
-		width: 232px;
-	}
-	.about_travel-box .caption .caption-text{
-		font-size:17px;
-		padding-top: 10px;
-	}
-}
-@media (min-width: 768px){
-
-	.hidden-mds{
-		opacity: 0;
-	}
-	.navbar-fixed-top{
-		background-color: #0A91AB !important;
-		transition:all 1s;
-	}
-	.navbar-fixed-top .hidden-mds{
-		opacity: 1;
-	}
-	.navbar-fixed-top .navbar-nav>li>a{
-		font-size: 16px;
-		padding-top:15px;
-		padding-bottom: 15px;
-		color: #fff;
-		position: relative;
-		transition:all 1s;
-		line-height:20px;
-	}
-	.navbar-fixed-top .navbar-nav>li>a.line:before{
-		background-color: #086D80;
-	}
-	.navbar>.container .navbar-brand{
-		margin-top: 6px;
-	}
-	.navbar-fixed-top.navbar>.container .navbar-brand{
-		margin-top: 0px;
-	}
-}
-@media (max-width: 991px) and (min-width: 768px){
-	.hidden-mds{
-		opacity: 1;
-	}
-}
 </style>
 </head>
 <body>
@@ -140,7 +52,7 @@
 				<span class="icon-bar"></span>
 				<span class="icon-bar"></span>
 			</button>
-			<a href="index.html" class="navbar-brand hidden-lgs hidden-mds">
+			<a href="index.html" class="navbar-brand hidden-mds">
 				<img src="images/logo.png" width="65" alt="">
 			</a>
 		</div>
@@ -739,27 +651,27 @@
 <footer id="footer">
 	<div class="container">
 		<div class="row">
-			<div class="col-md-2 col-sm-6 col-xs-6 footer-about-box">
+			<div class="col-md-2 col-sm-4 col-xs-6 footer-about-box">
 				<a href="#"><i class="fa fa-archive"></i><span>關於我們</span></a>
 			</div>
-			<div class="col-md-2 col-sm-6 col-xs-6 footer-about-box">
+			<div class="col-md-2 col-sm-4 col-xs-6 footer-about-box">
 				<a href="#"><i class="fa fa-diamond"></i><span>最新消息</span></a>
 			</div>
-			<div class="col-md-2 col-sm-6 col-xs-6 footer-about-box">
+			<div class="col-md-2 col-sm-4 col-xs-6 footer-about-box">
 				<a href="#"><i class="fa fa-gift"></i><span>資料下載</span></a>
 			</div>
-			<div class="col-md-2 col-sm-6 col-xs-6 footer-about-box">
+			<div class="col-md-2 col-sm-4 col-xs-6 footer-about-box">
 				<a href="#"><i class="fa fa-envelope-o"></i><span>聯絡我們</span></a>
 			</div>
-			<div class="col-md-2 col-sm-6 col-xs-6 footer-about-box">
+			<div class="col-md-2 col-sm-4 col-xs-6 footer-about-box">
 				<a href="#"><i class="fa fa-question"></i><span>問題查詢</span></a>
 			</div>
-			<div class="col-md-2 col-sm-6 col-xs-6 footer-about-box">
+			<div class="col-md-2 col-sm-4 col-xs-6 footer-about-box">
 				<a href="#"><i class="fa fa-users"></i><span>人才應徵</span></a>
 			</div>
 		</div>
 		<div class="row">
-			<div class="col-md-6 footer-content-box">
+			<div class="col-md-6 col-sm-6 col-xs-12 footer-content-box">
 				<p>旅遊網Best Travel</p>
 				<p>高雄市岡山區大遼里9鄰中山南路2號</p>
 				<p>
@@ -767,11 +679,16 @@
 					<a href="#"><i class="fa fa-twitter-square"></i></a>
 					<a href="#"><i class="fa fa-weibo"></i></a>
 				</p>
+				<button class="btnn about-login-btn">會員登錄</button>
+				<div class="username-box">
+					<i class="fa fa-user"></i><span class="username-text"></span><span>您好</span>
+				</div>
 			</div>
-			<div class="col-md-6 footer-content-box">
+			<div class="col-md-6 col-sm-6 col-xs-12 footer-content-box">
 				<p>服務專線：02-8888-9991</p>
 				<p>傳真：02-8888-9992</p>
 				<p>客服信箱：psychosocial909@gmail.com</p>
+				<button class="btnn about-video-btn">影片觀賞</button>
 			</div>
 		</div>
 	</div>
