@@ -17,14 +17,6 @@ $(function(){
 			$('.navbar-nav>li:first').addClass('active');
 		}
 	})
-	$(window).on('resize',function(){
-		if($(window).width()<767){
-			$('#nav').addClass('navbar-fixed-top');
-		}else{
-			$('#nav').removeClass('navbar-fixed-top');
-		}
-		console.log($(window).width());
-	})
 	$('#top').on('click',function(){
 		$('html,body').animate({
 			scrollTop:0
