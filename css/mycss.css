@@ -917,17 +917,27 @@ body{
 	height: 400px;
 	position: relative;
 	border-radius: 12px;
+	box-shadow: 0 0 2px #d2d2d2,0 0 4px #000;
 }
 .login-text{
 	width: 100%;
 	height: 80px;
-	background-color: #FFC478;
 	text-align: center;
 	line-height: 80px;
 	font-size: 36px;
 	font-weight: 900;
 	border-radius: 12px 12px 0 0;
-	color: #724330;
+	color: #000;
+}
+.login-text:after{
+	content: '';
+	width: 80%;
+	height: 80px;
+	position: absolute;
+	top: 0;
+	left: 50%;
+	transform:translateX(-50%);
+	border-bottom: 1px solid #ddd;
 }
 .login-btn{
 	outline: none;
@@ -1004,6 +1014,7 @@ body{
 	cursor: pointer;
 	display: none;
 	transition:all .5s;
+	z-index: 999;
 }
 #top.active{
 	/*transform:rotate(360deg);*/
@@ -1087,6 +1098,7 @@ body{
 	}
 }
 @media(max-width: 767px){
+	.login-close-icon,
 	.close-icon{
 		top: -80px;
 		left: 50%;
@@ -1097,6 +1109,7 @@ body{
 	.video-box{
 		border:2px solid white;
 	}
+	.login-close-icon,
 	.close-icon{
 		top: -80px;
 		left: 50%;

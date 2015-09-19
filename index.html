@@ -32,6 +32,44 @@
 .navbar-toggle.active .iconb{
 	transform:scale(0);
 }
+.login-content input[type="checkbox"]{
+	margin-top: 0;
+}
+.checkbox input[type=checkbox]{
+	width: 20px;
+	height: 20px;
+	margin-left: 0;
+	opacity: 0;
+	z-index: 99;
+	cursor: pointer;
+}
+.checkbox label{
+	margin-left: 10px;
+}
+.checkbox-box{
+	width: 20px;
+	height: 20px;
+	position: absolute;
+	border-radius: 3px;
+	border: 2px solid #43A367;
+	line-height: 16px;
+	text-align: center;
+	font-size: 16px;
+	color: #96CD39;
+	top: 0;
+}
+.checkbox-box .fa-star{
+	opacity: 0;
+}
+#checkbox:checked ~ .checkbox-box .fa-star{
+	opacity: 1;
+}
+.checkbox-err{
+	position: absolute;
+	top: 0;
+	right: 0;
+	color: #F33535;
+}
 </style>
 </head>
 <body>
@@ -95,7 +133,7 @@
 	</ol>
 	<div class="carousel-inner">
 		<div class="item active">
-			<a href="#">
+			<a href="javascript:;">
 				<div class="jumbotron">
 					<div class="jumbotron-bg slide-bg-01">
 						<div class="container jumbotron-content">
@@ -114,7 +152,7 @@
 			</a>
 		</div>
 		<div class="item">
-			<a href="#">
+			<a href="javascript:;">
 				<div class="jumbotron">
 					<div class="jumbotron-bg slide-bg-02">
 						<div class="container jumbotron-content">
@@ -133,7 +171,7 @@
 			</a>
 		</div>
 		<div class="item">
-			<a href="#">
+			<a href="javascript:;">
 				<div class="jumbotron">
 					<div class="jumbotron-bg slide-bg-03">
 						<div class="container jumbotron-content">
@@ -182,7 +220,7 @@
 					<div id="north" class="tab-pane active">
 						<div class="row about_local-content-box">
 							<div class="col-md-4 col-sm-6">
-								<a href="#">
+								<a href="javascript:;">
 									<div class="thumbnail">
 										<img src="images/item1-1.jpg" alt="" class="">
 										<div class="caption">
@@ -194,7 +232,7 @@
 								</a>
 							</div>
 							<div class="col-md-4 col-sm-6">
-								<a href="#">
+								<a href="javascript:;">
 									<div class="thumbnail">
 										<img src="images/item1-2.jpg" alt="" class="">
 										<div class="caption">
@@ -206,7 +244,7 @@
 								</a>
 							</div>
 							<div class="col-md-4 col-sm-6">
-								<a href="#">
+								<a href="javascript:;">
 									<div class="thumbnail">
 										<img src="images/item1-3.jpg" alt="" class="">
 										<div class="caption">
@@ -218,7 +256,7 @@
 								</a>
 							</div>
 							<div class="col-md-4 col-sm-6">
-								<a href="#">
+								<a href="javascript:;">
 									<div class="thumbnail">
 										<img src="images/item1-4.jpg" alt="" class="">
 										<div class="caption">
@@ -230,7 +268,7 @@
 								</a>
 							</div>
 							<div class="col-md-4 col-sm-6">
-								<a href="#">
+								<a href="javascript:;">
 									<div class="thumbnail">
 										<img src="images/item1-5.jpg" alt="" class="">
 										<div class="caption">
@@ -242,7 +280,7 @@
 								</a>
 							</div>
 							<div class="col-md-4 col-sm-6">
-								<a href="#">
+								<a href="javascript:;">
 									<div class="thumbnail">
 										<img src="images/item1-6.jpg" alt="" class="">
 										<div class="caption">
@@ -258,7 +296,7 @@
 					<div id="middle" class="tab-pane">
 						<div class="row about_local-content-box">
 							<div class="col-md-4 col-sm-6">
-								<a href="#">
+								<a href="javascript:;">
 									<div class="thumbnail">
 										<img src="images/item2-1.jpg" alt="" class="">
 										<div class="caption">
@@ -270,7 +308,7 @@
 								</a>
 							</div>
 							<div class="col-md-4 col-sm-6">
-								<a href="#">
+								<a href="javascript:;">
 									<div class="thumbnail">
 										<img src="images/item2-2.jpg" alt="" class="">
 										<div class="caption">
@@ -282,7 +320,7 @@
 								</a>
 							</div>
 							<div class="col-md-4 col-sm-6">
-								<a href="#">
+								<a href="javascript:;">
 									<div class="thumbnail">
 										<img src="images/item2-3.jpg" alt="" class="">
 										<div class="caption">
@@ -294,7 +332,7 @@
 								</a>
 							</div>
 							<div class="col-md-4 col-sm-6">
-								<a href="#">
+								<a href="javascript:;">
 									<div class="thumbnail">
 										<img src="images/item2-4.jpg" alt="" class="">
 										<div class="caption">
@@ -306,7 +344,7 @@
 								</a>
 							</div>
 							<div class="col-md-4 col-sm-6">
-								<a href="#">
+								<a href="javascript:;">
 									<div class="thumbnail">
 										<img src="images/item2-5.jpg" alt="" class="">
 										<div class="caption">
@@ -318,7 +356,7 @@
 								</a>
 							</div>
 							<div class="col-md-4 col-sm-6">
-								<a href="#">
+								<a href="javascript:;">
 									<div class="thumbnail">
 										<img src="images/item2-6.jpg" alt="" class="">
 										<div class="caption">
@@ -343,7 +381,7 @@
 		<div class="row">
 			<div class="col-md-2 col-xs-4">
 				<figure class="about_genre-box">
-					<a href="#">
+					<a href="javascript:;">
 						<img src="images/genre01.jpg" width="130" height="130" alt="" class="img-circle img-responsive center-block">
 						<figcaption>金光石</figcaption>
 					</a>
@@ -351,7 +389,7 @@
 			</div>
 			<div class="col-md-2 col-xs-4">
 				<figure class="about_genre-box">
-					<a href="#">
+					<a href="javascript:;">
 						<img src="images/genre02.jpg" width="130" height="130" alt="" class="img-circle img-responsive center-block">
 						<figcaption>基隆廟口</figcaption>
 					</a>
@@ -359,7 +397,7 @@
 			</div>
 			<div class="col-md-2 col-xs-4">
 				<figure class="about_genre-box">
-					<a href="#">
+					<a href="javascript:;">
 						<img src="images/genre03.jpg" width="130" height="130" alt="" class="img-circle img-responsive center-block">
 						<figcaption>旗津</figcaption>
 					</a>
@@ -367,7 +405,7 @@
 			</div>
 			<div class="col-md-2 col-xs-4">
 				<figure class="about_genre-box">
-					<a href="#">
+					<a href="javascript:;">
 						<img src="images/genre04.jpg" width="130" height="130" alt="" class="img-circle img-responsive center-block">
 						<figcaption>花蓮</figcaption>
 					</a>
@@ -375,7 +413,7 @@
 			</div>
 			<div class="col-md-2 col-xs-4">
 				<figure class="about_genre-box">
-					<a href="#">
+					<a href="javascript:;">
 						<img src="images/genre05.jpg" width="130" height="130" alt="" class="img-circle img-responsive center-block">
 						<figcaption>九份老街</figcaption>
 					</a>
@@ -383,7 +421,7 @@
 			</div>
 			<div class="col-md-2 col-xs-4">
 				<figure class="about_genre-box">
-					<a href="#">
+					<a href="javascript:;">
 						<img src="images/genre06.jpg" width="130" height="130" alt="" class="img-circle img-responsive center-block">
 						<figcaption>野柳</figcaption>
 					</a>
@@ -393,7 +431,7 @@
 		<div class="row">
 			<div class="col-md-2 col-xs-4">
 				<figure class="about_genre-box">
-					<a href="#">
+					<a href="javascript:;">
 						<img src="images/genre07.jpg" width="130" height="130" alt="" class="img-circle img-responsive center-block">
 						<figcaption>日月潭</figcaption>
 					</a>
@@ -401,7 +439,7 @@
 			</div>
 			<div class="col-md-2 col-xs-4">
 				<figure class="about_genre-box">
-					<a href="#">
+					<a href="javascript:;">
 						<img src="images/genre08.jpg" width="130" height="130" alt="" class="img-circle img-responsive center-block">
 						<figcaption>泛舟</figcaption>
 					</a>
@@ -409,7 +447,7 @@
 			</div>
 			<div class="col-md-2 col-xs-4">
 				<figure class="about_genre-box">
-					<a href="#">
+					<a href="javascript:;">
 						<img src="images/genre09.jpg" width="130" height="130" alt="" class="img-circle img-responsive center-block">
 						<figcaption>初鹿牧場</figcaption>
 					</a>
@@ -417,7 +455,7 @@
 			</div>
 			<div class="col-md-2 col-xs-4">
 				<figure class="about_genre-box">
-					<a href="#">
+					<a href="javascript:;">
 						<img src="images/genre10.jpg" width="130" height="130" alt="" class="img-circle img-responsive center-block">
 						<figcaption>觀音山</figcaption>
 					</a>
@@ -425,7 +463,7 @@
 			</div>
 			<div class="col-md-2 col-xs-4">
 				<figure class="about_genre-box">
-					<a href="#">
+					<a href="javascript:;">
 						<img src="images/genre11.jpg" width="130" height="130" alt="" class="img-circle img-responsive center-block">
 						<figcaption>阿里山</figcaption>
 					</a>
@@ -433,7 +471,7 @@
 			</div>
 			<div class="col-md-2 col-xs-4">
 				<figure class="about_genre-box">
-					<a href="#">
+					<a href="javascript:;">
 						<img src="images/genre12.jpg" width="130" height="130" alt="" class="img-circle img-responsive center-block">
 						<figcaption>高雄愛河</figcaption>
 					</a>
@@ -474,7 +512,7 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-md-3 col-sm-6 col-xs-12 t">
-				<a href="#">
+				<a href="javascript:;">
 					<div class="thumbnail about_travel-box">
 						<img src="images/item1-1.jpg" alt="">
 						<div class="caption">
@@ -495,7 +533,7 @@
 				</a>
 			</div>
 			<div class="col-md-3 col-sm-6 col-xs-12 t">
-				<a href="#">
+				<a href="javascript:;">
 					<div class="thumbnail about_travel-box">
 						<img src="images/item1-2.jpg" alt="">
 						<div class="caption">
@@ -516,7 +554,7 @@
 				</a>
 			</div>
 			<div class="col-md-3 col-sm-6 col-xs-12 t">
-				<a href="#">
+				<a href="javascript:;">
 					<div class="thumbnail about_travel-box">
 						<img src="images/item1-3.jpg" alt="">
 						<div class="caption">
@@ -538,7 +576,7 @@
 				</a>
 			</div>
 			<div class="col-md-3 col-sm-6 col-xs-12 t">
-				<a href="#">
+				<a href="javascript:;">
 					<div class="thumbnail about_travel-box">
 						<img src="images/item1-4.jpg" alt="">
 						<div class="caption">
@@ -559,7 +597,7 @@
 				</a>
 			</div>
 			<div class="col-md-3 col-sm-6 col-xs-12 t">
-				<a href="#">
+				<a href="javascript:;">
 					<div class="thumbnail about_travel-box">
 						<img src="images/item1-5.jpg" alt="">
 						<div class="caption">
@@ -580,7 +618,7 @@
 				</a>
 			</div>
 			<div class="col-md-3 col-sm-6 col-xs-12 t">
-				<a href="#">
+				<a href="javascript:;">
 					<div class="thumbnail about_travel-box">
 						<img src="images/item1-6.jpg" alt="">
 						<div class="caption">
@@ -601,7 +639,7 @@
 				</a>
 			</div>
 			<div class="col-md-3 col-sm-6 col-xs-12 t">
-				<a href="#">
+				<a href="javascript:;">
 					<div class="thumbnail about_travel-box">
 						<img src="images/item2-1.jpg" alt="">
 						<div class="caption">
@@ -622,7 +660,7 @@
 				</a>
 			</div>
 			<div class="col-md-3 col-sm-6 col-xs-12 t">
-				<a href="#">
+				<a href="javascript:;">
 					<div class="thumbnail about_travel-box">
 						<img src="images/item2-2.jpg" alt="">
 						<div class="caption">
@@ -643,7 +681,7 @@
 				</a>
 			</div>
 			<div class="col-md-3 col-sm-6 col-xs-12 t">
-				<a href="#">
+				<a href="javascript:;">
 					<div class="thumbnail about_travel-box">
 						<img src="images/item2-3.jpg" alt="">
 						<div class="caption">
@@ -671,22 +709,22 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-md-2 col-sm-4 col-xs-6 footer-about-box">
-				<a href="#"><i class="fa fa-archive"></i><span>關於我們</span></a>
+				<a href="javascript:;"><i class="fa fa-archive"></i><span>關於我們</span></a>
 			</div>
 			<div class="col-md-2 col-sm-4 col-xs-6 footer-about-box">
-				<a href="#"><i class="fa fa-diamond"></i><span>最新消息</span></a>
+				<a href="javascript:;"><i class="fa fa-diamond"></i><span>最新消息</span></a>
 			</div>
 			<div class="col-md-2 col-sm-4 col-xs-6 footer-about-box">
-				<a href="#"><i class="fa fa-gift"></i><span>資料下載</span></a>
+				<a href="javascript:;"><i class="fa fa-gift"></i><span>資料下載</span></a>
 			</div>
 			<div class="col-md-2 col-sm-4 col-xs-6 footer-about-box">
-				<a href="#"><i class="fa fa-envelope-o"></i><span>聯絡我們</span></a>
+				<a href="javascript:;"><i class="fa fa-envelope-o"></i><span>聯絡我們</span></a>
 			</div>
 			<div class="col-md-2 col-sm-4 col-xs-6 footer-about-box">
-				<a href="#"><i class="fa fa-question"></i><span>問題查詢</span></a>
+				<a href="javascript:;"><i class="fa fa-question"></i><span>問題查詢</span></a>
 			</div>
 			<div class="col-md-2 col-sm-4 col-xs-6 footer-about-box">
-				<a href="#"><i class="fa fa-users"></i><span>人才應徵</span></a>
+				<a href="javascript:;"><i class="fa fa-users"></i><span>人才應徵</span></a>
 			</div>
 		</div>
 		<div class="row">
@@ -694,9 +732,9 @@
 				<p>旅遊網Best Travel</p>
 				<p>高雄市岡山區大遼里9鄰中山南路2號</p>
 				<p>
-					<a href="#"><i class="fa fa-facebook-square"></i></a>
-					<a href="#"><i class="fa fa-twitter-square"></i></a>
-					<a href="#"><i class="fa fa-weibo"></i></a>
+					<a href="javascript:;"><i class="fa fa-facebook-square"></i></a>
+					<a href="javascript:;"><i class="fa fa-twitter-square"></i></a>
+					<a href="javascript:;"><i class="fa fa-weibo"></i></a>
 				</p>
 				<button class="btnn about-login-btn">會員登錄</button>
 				<div class="username-box">
@@ -725,15 +763,15 @@
 <div id="login">
 	<div class="cotainer">
 		<div class="row">
-			<div class="col-md-6 col-md-offset-3">
+			<div class="col-md-6 col-md-offset-3 col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1">
 				<div class="login-box">
 					<div class="login-text">
 						<p class="text-align">會員登入</p>
 					</div>
 					<div class="row">
-						<div class="col-md-6 col-md-offset-3">
+						<div class="col-md-6 col-md-offset-3 col-sm-6 col-sm-offset-3 col-xs-10 col-xs-offset-1">
 							<div class="login-content">
-								<form class="login-content-form" onsubmit="return CheckPost();">
+								<form class="login-content-form" method="post" onsubmit="return CheckPost();">
 									<div class="form-group user-box has-feedback">
 										<input type="text" id="username" class="form-control" name="username" placeholder="請輸入用戶名" onchange="checkChangeU(this.id)" onfocus="checkFocus(this.id);" maxlength="9">
 										<label id="username-error" class="error" for="username">
@@ -751,9 +789,12 @@
 
 									<div class="form-group check-group">
 										<div class="checkbox">
-											<label>
-												<input type="checkbox"> Remember me
-											</label>
+											<input type="checkbox" name="checkbox" id="checkbox">
+											<label for="checkbox">確認</label>
+											<div class="checkbox-box">
+												<i class="fa fa-star"></i>
+											</div>
+											<div class="checkbox-err"></div>
 										</div>
 									</div>
 									<button type="submit" class="login-btn">登入</button>

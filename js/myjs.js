@@ -1,5 +1,4 @@
 $(function(){
-	var validator;
 	$(window).scroll(function(){
 		var headerH=$('#header').height();
 		if($(window).scrollTop()>headerH){
@@ -69,19 +68,10 @@ $(function(){
 	$('.login-close-icon').on('click',function(){
 		$('.gray').fadeOut();
 		$('#login').fadeOut();
-		// validator.resetForm();
-	})
-	$('.gray').on('click',function(){
-		$('.gray').fadeOut();
-		$('#login').fadeOut();
-		$('#video').fadeOut();
-		vd.pause();
-		$('.username-box').hide();
 	})
 	$('.about-login-btn').on('click',function(){
 		$('.gray').fadeIn();
 		$('#login').fadeIn();
-		// validator.resetForm();
 	})
 	$('.username-box').on('click',function(){
 		$('.username-box').hide();
@@ -124,7 +114,8 @@ function checkChangeU(id){
 function CheckPost(){
 	var pwd=$("#password");
 	var user=$('#username');
-	if(user.val().length>3 && pwd.val()=='123'){
+	var check=$('#checkbox').prop('checked');
+	if(user.val().length>3 && pwd.val()=='123' && check!=false){
 		$('.gray').fadeOut();
 		$('#login').fadeOut();
 		$('.about-login-btn').hide();
@@ -161,6 +152,7 @@ function CheckPost(){
 		$('.user-box').removeClass('has-success');
 		$('.user-box span').addClass('glyphicon-remove');
 		$('.user-box span').removeClass('glyphicon-ok');
+		$('#checkbox ~ .checkbox-err').text('請確認');
 	}
 	return false;
 }
