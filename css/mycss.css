@@ -1003,11 +1003,22 @@ body{
 	border-radius: 50%;
 	cursor: pointer;
 	display: none;
-	transform:rotate(0deg);
 	transition:all .5s;
 }
 #top.active{
-	transform:rotate(360deg);
+	/*transform:rotate(360deg);*/
+	animation:totop .8s linear;
+}
+@keyframes totop{
+	0%{
+		transform:scaleX(1);
+	}
+	50%{
+		transform:scaleX(1.5);
+	}
+	100%{
+		transform:scaleX(1);
+	}
 }
 
 @media (min-width:1200px){

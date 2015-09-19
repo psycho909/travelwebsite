@@ -12,7 +12,26 @@
 <link rel="bookmark" href="images/icon.ico"/>
 <link rel="stylesheet" href="./css/mycss.css">
 <script src="./js/myjs.js"></script>
+<script>
+	$(function(){
+		$('.navbar-toggle').on('click',function(){
+			$(this).toggleClass('active');
+		})
+	})
+</script>
 <style>
+.navbar-toggle .icon-bar{
+	transition:all .5s linear;
+}
+.navbar-toggle.active .icona{
+	transform:translateY(6px) rotate(-135deg);
+}
+.navbar-toggle.active .iconc{
+	transform:translateY(-6px) rotate(135deg);
+}
+.navbar-toggle.active .iconb{
+	transform:scale(0);
+}
 </style>
 </head>
 <body>
@@ -48,9 +67,9 @@
 	<div class="container">
 		<div class="navbar-header">
 			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-menu">
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
+				<span class="icon-bar icona"></span>
+				<span class="icon-bar iconb"></span>
+				<span class="icon-bar iconc"></span>
 			</button>
 			<a href="index.html" class="navbar-brand hidden-mds">
 				<img src="images/logo.png" width="65" alt="">
