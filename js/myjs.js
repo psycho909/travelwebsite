@@ -25,6 +25,9 @@ $(function(){
     $('a.page-scroll').on('click', function(event) {
 	    var attrHref = $(this);
 	    var x=$(window).width()
+	    var a=$($(this).attr('href'));
+	    console.log(a);
+	    console.log($(this));
 	    if($('#nav').hasClass('navbar-fixed-top')){
 	    	$('html, body').stop().animate({
 		        scrollTop: ($(attrHref.attr('href')).offset().top - 51)
