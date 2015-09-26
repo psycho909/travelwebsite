@@ -12,17 +12,18 @@
 <link rel="bookmark" href="images/icon.ico"/>
 <link rel="stylesheet" href="./css/mycss.css">
 <script src="./js/myjs.js"></script>
-<script src="./js/swipe.js"></script>
+<script src="./js/jquery.touchwipe.min.js"></script>
 <script>
 	$(function(){
 		$('.navbar-toggle').on('click',function(){
 			$(this).toggleClass('active');
 		})
-		var $myCarousel=$('.carousel-inner').swiperight(function(){
-			$myCarousel.carousel('prev');
-		}).swipeleft(function(){
-			$myCarousel.carousel('next');
-		})
+		jQuery("#myCarousel").touchwipe({
+	        wipeLeft: function() { jQuery("#myCarousel").carousel('next'); },
+	        wipeRight: function() { jQuery("#myCarousel").carousel('prev'); },
+	        min_move_x: 20,
+	        preventDefaultEvents: true
+		});
 	})
 </script>
 <style>
